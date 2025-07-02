@@ -1,0 +1,147 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      background-size: 400% 400%;
+      animation: moverGradiente 15s ease infinite;
+      color: black;
+    }
+
+    @keyframes moverGradiente {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #4B0082, purple, #8A2BE2);
+    }
+
+    .prih1 {
+      font-size: 60px;
+      color: white;
+      background-clip: text;
+    }
+
+    .prih2 {
+      text-align: center;
+      margin: 60px 0;
+      font-size: 26px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #4B0082, purple, #8A2BE2, #00FFFF);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .segunh1 {
+      margin: 40px auto;
+      border: 3px solid #4B0082;
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .img-lado {
+      display: inline-block;
+      margin: 40px 10px;
+      width: 250px;
+      height: 250px;
+      border-radius: 20px 0 20px 0;
+      border: 3px solid #4B0082;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .prih1dife {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back {
+      background: linear-gradient(135deg, #4B0082, purple, #8A2BE2);
+      padding-bottom: 50px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .segunh2,
+    .segunh2dife {
+      background-color: white;
+      border-top: 5px dotted #4B0082;
+      border-bottom: 5px dotted #4B0082;
+      padding: 20px;
+      margin: 80px 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .segunh2dife {
+      border-top: 3px #4B0082 solid;
+      border-bottom: 3px #4B0082 solid;
+    }
+
+    .prih3,
+    .prih3mod {
+      font-size: 32px;
+      background: linear-gradient(135deg, #4B0082, purple, #8A2BE2);
+      color: white;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 30px;
+      margin: 20px 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .animated-line {
+      height: 4px;
+      width: 0;
+      background: linear-gradient(135deg, #4B0082, purple, #8A2BE2, #00FFFF);
+      animation: expand 2s ease-in-out forwards;
+    }
+
+    @keyframes expand {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .img-lado {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+      }
+    }
